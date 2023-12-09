@@ -19,17 +19,14 @@ function updateList(key, array) {
 }
 
 function add() {
-	if (getList("restaurants") === null) {
-		updateList("restaurants", [JSON.stringify(restaurant)]);
-	}
+	let list =
+		getList("restaurants") === null ? [] : JSON.parse(getList("restaurants"));
 
-	// const currentList = getList("restaurants");
+	let newList = list.push(restaurant);
 
-	// newList = [...currentList, restaurant];
+	updateList("restaurants", JSON.stringify(newList));
 
-	// updateList("restaurants", newList);
-
-	console.log(getList("restaurants"));
+	console.log(list);
 }
 </script>
 

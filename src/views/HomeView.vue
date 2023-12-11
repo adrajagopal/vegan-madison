@@ -2,7 +2,7 @@
 import { onMounted } from "vue";
 
 onMounted(() => {
-	var map = L.map("map").setView([43.07485907699501, -89.38413717048415], 12);
+	var map = L.map("map").setView([43.07485907699501, -89.38413717048415], 13);
 
 	L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		maxZoom: 19,
@@ -29,6 +29,12 @@ onMounted(() => {
 
 <style scoped>
 #map {
-	height: 400px;
+	height: 100vh;
+	width: 100vw;
+
+	& div.leaflet-popup-content-wrapper {
+		/*not working*/
+		background-color: black;
+	}
 }
 </style>

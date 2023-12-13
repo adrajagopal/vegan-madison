@@ -1,24 +1,24 @@
 /* P reset */
-@import 'preset.css';
+@import "preset.css";
 
 /* S etup */
-@import 'setup.css';
+@import "setup.css";
 
 /* S setings */
-@import 'settings.css';
-@import 'developer-styles.css';
+@import "settings.css";
+@import "developer-styles.css";
 
 /* S tructure */
-@import 'structure.css';
+@import "structure.css";
 
 /* T ypography */
-@import 'typography.css';
+@import "typography.css";
 
 /* C omponents */
-@import 'components.css';
+@import "components.css";
 
 /* S tuff (modules) */
-@import 'modules.css';
+@import "modules.css";
 
 /* S ections and more stuff */
 
@@ -28,21 +28,21 @@ body {
 	color: var(--ink);
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"],
+[class*=" icon-"] {
 	height: 48px;
 	width: 48px;
 	/*	display: inline-block;*/
 	/*	fill: currentColor;*/
 }
 
-[class*='icon-openMenu'] {
+[class*="icon-openMenu"] {
 	fill: var(--highlight);
 	stroke: var(--ink);
 	stroke-width: 25;
 }
 
-[class*='icon-closeMenu'] {
+[class*="icon-closeMenu"] {
 	fill: var(--ink);
 	stroke: var(--ink);
 	stroke-width: 25;

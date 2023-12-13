@@ -2,7 +2,10 @@
 import { onMounted } from "vue";
 
 onMounted(() => {
-	var map = L.map("map").setView([43.07485907699501, -89.38413717048415], 13);
+	let mapCenter = [43.07485907699501, -89.38413717048415];
+	let initialZoom = 13;
+
+	var map = L.map("map").setView(mapCenter, initialZoom);
 
 	L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		maxZoom: 19,
@@ -36,7 +39,10 @@ onMounted(() => {
 div.leaflet-popup-content-wrapper {
 	/*not working*/
 	background-color: black;
-	color: white;
 	border-radius: 5px;
+}
+
+.leaflet-popup-content * {
+	color: white;
 }
 </style>

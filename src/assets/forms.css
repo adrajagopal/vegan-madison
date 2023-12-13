@@ -40,4 +40,12 @@ form {
 		background-color: var(--paper);
 		border: 1px solid var(--shadow);
 	}
+
+	& select {
+		background-color: var(--paper);
+		font-size: 1rem;
+		padding: 12px 20px;
+		border: none;
+		border-radius: var(--corners);
+	}
 }

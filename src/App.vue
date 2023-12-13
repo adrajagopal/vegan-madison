@@ -4,12 +4,21 @@ import SiteHeader from "@/components/SiteHeader.vue";
 
 <template>
 	<header>
-		<inner-column>
-			<SiteHeader />
-		</inner-column>
+		<SiteHeader />
 	</header>
 
 	<RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+	position: absolute;
+	padding: 16px;
+	top: 8px;
+	left: 75px;
+	z-index: 450;
+	background-color: var(--paper);
+	border-radius: var(--corners);
+	box-shadow: var(--card-shadow);
+}
+</style>

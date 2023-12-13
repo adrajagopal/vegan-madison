@@ -27,14 +27,16 @@ onMounted(() => {
 	</main>
 </template>
 
-<style scoped>
+<style>
 #map {
 	height: 100vh;
 	width: 100vw;
+}
 
-	& div.leaflet-popup-content-wrapper {
-		/*not working*/
-		background-color: black;
-	}
+div.leaflet-popup-content-wrapper {
+	/*not working*/
+	background-color: black;
+	color: white;
+	border-radius: 5px;
 }
 </style>

@@ -15,19 +15,20 @@ html {
 	--warning-dark: hsl(355, 55%, 45%);
 
 	--shadow: hsla(0, 0%, 80%, 0.8);
+	--card-shadow: 2px 2px 2px 1px hsla(0, 40%, 15%, 0.5);
 
-	--corners: 10px;
+	--corners: 5px;
 
-	--paper: hsl(40, 50%, 90%);
-	--ink: hsl(225, 10%, 10%);
+	--paper: hsl(40, 50%, 98%);
+	--ink: hsl(230, 10%, 15%);
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
 		--highlight: hsl(225, 30%, 40%);
 
-		--paper: hsl(225, 10%, 10%);
-		--ink: hsl(40, 50%, 90%);
+		--paper: hsl(230, 10%, 20%);
+		--ink: hsl(40, 50%, 95%);
 
 		--shadow: hsla(0, 0%, 40%, 0.8);
 	}
